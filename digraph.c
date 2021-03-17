@@ -1,7 +1,16 @@
 /*Autor : Mateusz Jastrzebski
-nr albumu: 421100
 */
 
+/*
+Zadaniem programu jest uproszczenie grafu, to jest przeprowadzenie
+słowa opisanego gramatyką:
+graf = "strict" "digraph" podgraf ;
+podgraf = "{" { węzły { "->" węzły } } "}" ;
+węzły = ID | podgraf ;
+
+w słowo opisane gramatyką:
+graf = "digraph" "{" { ID "->" "{" { ID } "}" } "}" ;
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
